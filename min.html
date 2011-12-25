@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Marwan Aziz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+	<script type="text/javascript" src="js/jquery.quicksand.js"></script> 
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+	$('.item > a > p').hide();
+	$('.item').hover(function() {
+		$(this).find('>a>p').slideDown({duration:200});
+		//$(this).find('>a>p').show('fast');
+		//alert(this+"clicked");
+	},function(){
+		$(this).find('>a>p').hide();
+	});
+	});
+
+		
+	</script>
+
+
+  <div id="wrap">
+  
+  <span id="title">&#8226; Marwan Aziz &#8226;</span>
+   <span class="discriptor">Web Applications Developer</span>
+    <h2>Personal Portfolio</h2>
+    
+    
+    <article>
+    <header>
+    <h3 class="section"> Credentials</h3>
+    </header>
+    <div style="margin-left: 50px;">	
+    <h4> 5+ years of industry experience</h4>	 
+    <h4>Active member of Open Web Applications Security Project (OWASP)</h4>	 
+    <h4>BSc of Computer Information Systems</h4>
+    <h4>Diploma of Technology</h4>
+    </div>
+    </article>
+    
+   <article
+   <header>
+   	<h3 class="section">Resume</h3>
+   	<h4 style="margin-left: 50px;"><a href="/resume.doc" > Click to download my resume </a></h4>
+   </header>
+   </article>
+   
+  	<article>
+    <header>
+    <h3 class="section">Skill set</h3>
+    </header>
+    <div id="skills">
+    <ul>
+    <li style="float:left;">  Actionscript 1+</li>
+    <li > LAMP </li>
+    <li style="float:right;"> Javascript (JQuery+Mobile)</li>
+    </ul>
+    
+    <ul>
+    <li style="float:left;">  HTML + CSS</li>
+    <li > .NET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li style="float:right;">Drupal &amp; Wordpress </li>
+    
+    </ul>
+    </div>
+    <h4 style="margin-left:50px; margin-top:0; padding:0; font-weight:bold; text-align:center;">Areas of specialty include development of stand-alone Flash applications, websites, and browser based mobile apps</h4>
+    </article>
+    
+	<article>
+		<header>
+			<h3 class="section">Projects</h3>
+		</header>
+		
+		
+	</article>     
+	<dl class="group">
+		<dt>Filter:</dt>
+		<dd>
+			<ul class="filter group"> 
+				<li class="current all"><a href="#">All</a></li> 
+				<li class="in-store"><a href="#">In-store</a></li> 
+				<li class="dynamic-content"><a href="#">Dynamic Content</a></li> 
+				<li class="web"><a href="#">Web-based solutions</a></li> 
+				
+			</ul> 
+		</dd>
+	</dl>
+
+	<!-- Portfolio Items -->
+	<ul class="portfolio group"> 
+		<li class="item" data-id="id-1" data-type="dynamic-content">
+                    <a href="http://www.yahoo.com"><img src="images/al_thumb.png" width="210" height="130" alt="Atlantic Lottery of Canada" /><p style="padding: 0px 5px">Atlantic Lottery: Smart jackpot, each spot plays</p></a>
+                              
+		<li class="item" data-id="id-2" data-type="dynamic-content">
+			<a href="images/bianca_yg.jpg"><img src="images/olg_thumb.png" width="210" height="130" alt="Ontario Lottery" /><p style="padding: 0px 5px">Atlantic Lottery: Smart jackpot, each spot plays</p></a>
+		</li>
+	
+		<li class="item" data-id="id-11" data-type="in-store">
+			<a href="images/britt_yg_3.jpg"><img src="images/tim_hortons_thumb.jpg" width="210" height="130" alt="Yulia Gorbachenko, On Fire 3" /></a>
+		</li>
+		<li class="item" data-id="id-12" data-type="in-store">
+			<a href="images/mikaela_yg_2.jpg" rel="prettyPhoto[portfolio]"><img src="images/McCafe_Logo_thumb.jpg" width="210" height="130" alt="Yulia Gorbachenko, Wavelength 2" /></a>
+		</li>
+	</ul>
+
+  
+       
+  <!-- end of wrap --></div>
+</body>
+</html>

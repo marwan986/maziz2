@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marwan Aziz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.quicksand.js"></script> 
+<script>
+$(function() {
+  $('.digital_signage').click(function(e) {
+
+   $('.source').quicksand( $('.destination li') );
+	var id = $(this).attr('class');
+    //$('.source').quicksand( $(this).attr('class'));
+	//alert(id);
+	
+    //e.preventDefault();
+  })
+});
+$(function() {
+  $('.destination').click(function(e) {
+
+    //$('.source').quicksand( $('.destination li') );
+	var id = $(this).attr('class');
+	$('.source').quicksand(id);
+
+    //$('.source').quicksand( $(this).attr('class'));
+	alert(id);
+	
+    //e.preventDefault();
+  })
+});
+ </script>
+  <div id="wrap">
+  
+	<h1>&middot; Marwan Aziz &middot;</h1>
+	<dl class="group">
+		<dt>Filter:</dt>
+		<dd>
+			<ul class="filter group"> 
+				<li class="current all"><a href="#">All</a></li> 
+				<li class="destination"><a href="#">Hair</a></li> 
+				<li class="onfire"><a href="#">On Fire</a></li> 
+				<li class="beauty"><a href="#">Beauty</a></li> 
+				<li class="hannah"><a href="#">Hannah</a></li> 
+				<li class="traction"><a href="#">Traction</a></li> 
+				<li class="digital_signage"><a href="#">Digital Signage</a></li> 
+			</ul> 
+		</dd>
+	</dl>
+	<p><a class="button" href="#dummy">Apples to oranges</a></p>
+<ul class="source">
+	<li data-id="iphone">iPhone OS</li>
+	<li data-id="android">Android</li>
+	<li data-id="winmo">Windows Mobile</li>
+</ul>
+
+<ul class="destination" class="hidden" style="visibility:hidden;">
+	<li data-id="macosx">Mac OS X</li>
+	<li data-id="macos9">Mac OS 9</li>
+	<li data-id="iphone">iPhone OS</li>
+</ul>
+
+  </div>
+</body>
+</html>
