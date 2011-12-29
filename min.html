@@ -17,6 +17,7 @@
 <body>
 	
 	<script type="text/javascript">
+	
 	function initProjectControls(){
 	$('.item > a > p').hide();
 	
@@ -27,11 +28,35 @@
 	},function(){
 		$(this).find('>a>p').hide();
 	});
-}
+		}
 	
 	$(document).ready(function(){
-initProjectControls();
-	
+		//initProjectControls();
+		$('.imgCaption').each(function(){
+		//...set the opacity to 0...
+		$(this).css('opacity', 0);
+		//..set width same as the image...
+		$(this).css('width', 218);
+		$(this).css('height', 140);
+		
+		//...get the parent (the wrapper) and set it's width same as the image width... '
+		$(this).parent().css('width', $(this).siblings('img').width());
+		//...set the display to block
+		$(this).css('display', 'block');
+		});
+
+		$('.imgWrapper').hover(function(){
+		//when mouse hover over the wrapper div
+		//get it's children elements with class description '
+		//and show it using fadeTo
+		alert($(this).children());
+		$(this).children('.imgCaption').stop().fadeTo(500, 0.85);
+		//alert('test');
+		},function(){
+		//when mouse out of the wrapper div
+		//use fadeTo to hide the div
+		$('.imgCaption').stop().fadeTo(500, 0);
+	});
 	});
 
 		
@@ -107,12 +132,25 @@ initProjectControls();
 
 	<!-- Portfolio Items -->
 	<ul class="portfolio group"> 
-		<li class="item" data-id="id-1" data-type="dynamic-content">
-                    <a href="http://www.yahoo.com"><img src="images/al_thumb.png" width="210" height="130" alt="Atlantic Lottery of Canada" /><p style="padding: 0px 5px">Atlantic Lottery: Smart jackpot, each spot plays</p></a>
+		<li class="item imgWrapper" data-id="id-1" data-type="dynamic-content">
+	        <a href="http://www.yahoo.com"><img src="images/al_thumb.png" width="210" height="130" alt="Atlantic Lottery of Canada" />
+	        <div class="imgCaption">
+	        	<div class="imgCaptionTitle">Atlatntic Lottery</div>
+	        	<div class="imgCaptionContent">test this is a test this is a test this is a test</div> 
+	        </div>	
+	        	
+	        </a></li>
                               
-		<li class="item" data-id="id-2" data-type="dynamic-content">
-			<a href="images/bianca_yg.jpg"><img src="images/olg_thumb.png" width="210" height="130" alt="Ontario Lottery" /><p style="padding: 0px 5px">Atlantic Lottery: Smart jackpot, each spot plays</p></a>
-		</li>
+		<li class="item imgWrapper" data-id="id-2" data-type="dynamic-content">
+			<a href="images/bianca_yg.jpg"><img src="images/olg_thumb.png" width="210" height="130" alt="Ontario Lottery" />
+				
+				<div class="imgCaption">
+					<div class="imgCaptionTitle">Ontario Lottery Corporation</div>
+					<div class="imgCaptionContent"> Atlantic Lottery: Smart jackpot, each spot plays</div>
+					
+				</div>
+				
+				</a></li>
 	
 		<li class="item" data-id="id-11" data-type="in-store">
 			<a href="images/britt_yg_3.jpg"><img src="images/tim_hortons_thumb.jpg" width="210" height="130" alt="Yulia Gorbachenko, On Fire 3" /></a>
