@@ -15,17 +15,23 @@
 </head>
 
 <body>
+	
 	<script type="text/javascript">
-	$(document).ready(function(){
-
+	function initProjectControls(){
 	$('.item > a > p').hide();
+	
 	$('.item').hover(function() {
-		$(this).find('>a>p').slideDown({duration:200});
+		$(this).find('>a>p').slideDown({duration:500});
 		//$(this).find('>a>p').show('fast');
 		//alert(this+"clicked");
 	},function(){
 		$(this).find('>a>p').hide();
 	});
+}
+	
+	$(document).ready(function(){
+initProjectControls();
+	
 	});
 
 		

@@ -73,7 +73,7 @@ dt { margin-right: 5px; }
 .filter li { float: left; }
 .filter li:after { content: "/"; }
 .filter li:last-child:after { content: ""; }
-.filter a { padding: 0 10px; color: #777; text-decoration: none; }
+.filter a { padding: 0 10px; color: #444; text-decoration: none; }
 .filter a:hover, .current a { }
 
 /* Portfolio Items */

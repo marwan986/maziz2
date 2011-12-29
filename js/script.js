@@ -37,7 +37,7 @@ $(document).ready(function(){
 			duration: 800, 
 			easing: 'easeInOutQuad' 
 		}, function(){
-			
+			//initProjectControls();
 			// Blur newly cloned portfolio items on mouse over and apply prettyPhoto
 			$(".portfolio a").hover( function(){ 
 				$(this).children("img").animate({ opacity: 0.75 }, "fast"); 
