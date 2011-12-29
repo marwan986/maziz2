@@ -33,7 +33,7 @@ h1 { font-family: 'Quattrocento', serif; font-size: 1.6em; line-height: 1em; tex
 h2 { font-size: 1.4em; line-height: 1em; padding-bottom: 0.5em; border-bottom: 1px solid #aaa; margin-bottom: 0.5em; color: #444; }
 h3 { font-size: 1.2em; }
 .section{
-	color:#36F;	
+	color:#00a8ff;	
 }
 
 a { color: #444; text-decoration: underline; -moz-transition: 0.4s all linear; -webkit-transition: 0.4s all linear; -o-transition: 0.4s all linear; transition: 0.4s all linear; outline-color: #aaa; }
@@ -58,6 +58,37 @@ a:hover {text-shadow: 1px 1px 1px rgba(0,0,0,.4);}
 	
 	text-align: center;
 }	
+.imgWrapper{
+	position:relative;
+}
+.imgCaption{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:-1px; /* position will be on bottom */
+	left:0px;
+	display:none; /* hide it */
+	/* styling bellow */
+	background-color:black;
+	font-family: 'tahoma';
+	font-size:15px;
+	color:white;
+	
+	 
+	
+
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.imgCaptionContent{
+	
+	padding:10px;
+}
+.imgCaptionTitle{
+	padding:10px;
+	color:#00a8ff;	
+	height:10px;
+}
 
 .demo-top { margin-bottom: 0.35714em; padding-bottom: 0.5em; border-bottom: 3px solid #000; }
 .credits { font-family: 'Quattrocento', serif; font-size: 1.28571em; line-height: 1.16667em; text-align: center; color: #444; margin-bottom: 2.66667em; }
